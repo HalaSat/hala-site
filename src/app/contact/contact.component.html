@@ -1,0 +1,35 @@
+<div class="contaner">
+  <div class="row justify-content-center">
+    <div class="col-md-9 col-lg-8 col-xs-12 col-sm-12 contact-container p-5">
+      <div class="row text center justify-content-center">
+        <div class="col-5">
+        <h1>Contact Us</h1>
+      </div>
+      </div>
+      <form [formGroup]="contactForm">
+      <div class="md-form mb-5">
+        <i class="fa fa-user prefix"></i>
+        <input mdbInputDirective type="text" id="form2" formControlName="senderName" class="form-control" data-error="name must be at least 3 charcters">
+        <label for="form2">Your Name</label>
+      </div>
+
+      <div class="md-form mb-5 mt-5">
+        <i class="fa fa-envelope prefix"></i>
+        <input mdbInputDirective type="text" id="form2" formControlName="senderEmail" class="form-control" data-error="please enter a valid email address">
+        <label for="form2">Your Email</label>
+      </div>
+
+      <div class="md-form mb-5">
+        <i class="fa fa-pencil prefix"></i>
+        <textarea type="text" id="form8" class="md-textarea form-control" formControlName="description" data-error="description must be at least 10 characters" mdbInputDirective></textarea>
+        <label for="form8">Description</label>
+      </div>
+
+      <div class="row justify-content-center">
+        <button mdbBtn type="button" color="primary" outline="true" mdbWavesEffect [disabled]="!contactForm.valid">Send</button>
+        <button mdbBtn type="button" color="warning" outline="true" (click)="onResetForm()" mdbWavesEffect>Reset</button>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,181 @@
+<mdb-navbar #navRef [SideClass]="navScroll ? sideClassScrolled : sideClass">
+    <mdb-navbar-brand>
+        <img src="../assets/images/logo2.png" height="70px" width="200px" alt="Logo Placeholder">
+    </mdb-navbar-brand>
+    <links>
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link waves-light" mdbWavesEffect>Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link waves-light" mdbWavesEffect>placeholder</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link waves-light" mdbWavesEffect>palceholder</a>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a mat-icon-button href="#" [@iconFAnimate]="fIconHover ?'hoverd' : ''" (mouseenter)="fIconHover = true"
+                    (mouseleave)="fIconHover = false">
+                    <i class="fa fa-facebook-f text-white" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a mat-icon-button href="#" [@iconTAnimate]="tIconHover ?'hoverd' : ''" (mouseenter)="tIconHover = true"
+                    (mouseleave)="tIconHover = false">
+                    <i class="fa fa-twitter text-white" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a mat-icon-button href="#" [@iconGAnimate]="gIconHover ?'hoverd' : ''" (mouseenter)="gIconHover = true"
+                    (mouseleave)="gIconHover = false">
+                    <i class="fa fa-google-plus text-white" aria-hidden="true"></i>
+                </a>
+            </li>
+
+
+        </ul>
+
+
+    </links>
+
+</mdb-navbar>
+
+<div class="" id="siteBody">
+    <div id="MainPageCarousel">
+
+        <mdb-carousel [isControls]="true" class="carousel slide" #carousel [animation]="'slide'" [interval]="2000">
+            <mdb-carousel-item>
+                <div class="view w-100">
+                    <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide">
+                    <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
+                </div>
+                <div class="carousel-caption">
+                    <h3 class="h3-responsive">Light mask</h3>
+                    <p>First text</p>
+                </div>
+            </mdb-carousel-item>
+
+            <mdb-carousel-item>
+                <div class="view w-100">
+                    <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide">
+                    <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
+                </div>
+                <div class="carousel-caption">
+                    <h3 class="h3-responsive">Strong mask</h3>
+                    <p>Secondary text</p>
+                </div>
+            </mdb-carousel-item>
+
+            <mdb-carousel-item>
+                <div class="view w-100">
+                    <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide">
+                    <div class="mask rgba-black-slight waves-light" mdbWavesEffect></div>
+                </div>
+                <div class="carousel-caption">
+                    <h3 class="h3-responsive">Slight mask</h3>
+                    <p>Third text</p>
+                </div>
+            </mdb-carousel-item>
+
+        </mdb-carousel>
+  
+    <div #contentRef class="content">
+    </div>
+    <div class="row text-center align-items-center services" >
+        <h1 class="col">Our Services</h1>
+        <app-services class="mb-5"></app-services>
+    </div>
+
+    <div class="partners-section">
+        <div class="row justify-content-center partners-row">
+            <div class="col-10 mt-5">
+                <h1 class="text-center pt-4 mb-5">Our Partners</h1>
+                <ngx-slick-carousel class="carousel mt-5" [config]="slideConfig" (init)="slickInit($event)">
+                    <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                        <img src="{{ slide.img }}" alt="" width="120px" height="100px" style="margin-left: 30%">
+                    </div>
+                </ngx-slick-carousel>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="" style="background-color:white">
+        <app-feature></app-feature>
+    </div>
+
+
+    <div class="about-section align-items-center row">
+        <div class="about-text-container col">
+            <h1 class="text-center pt-4 mb-4">About US</h1>
+            <div class="text-center pb-4">
+                <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="m-0"> Veniam dolorum quo ullam, ex magnam ratione vero ad tempora ea aut nisi adipisci, </p>
+                <p class="m-0">voluptatem ut, quibusdam cum voluptatum praesentium dolores iusto?</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="row contact-section">
+    <div class="col m-5">
+        <app-contact></app-contact>
+    </div>
+</div>
+</div>
+
+
+
+<footer class="page-footer font-small blue pt-4" style="direction:rtl">
+
+    <div id="footer-section" class="container-fluid text-center text-md-left" style="direction:rtl">
+        <div class="row" style="direction:rtl">
+
+            <hr class="clearfix w-100 d-md-none pb-3" style="direction:rtl">
+            <div class="col-md-3 mb-md-0 mb-3" style="direction:rtl">
+                <h5 class="text-uppercase" style="direction:rtl">Links</h5>
+                <ul class="list-unstyled" style="direction:rtl">
+                    <li>
+                        <a href="#!" style="direction:rtl">Link 1</a>
+                    </li>
+                    <li>
+                        <a href="#!">Link 2</a>
+                    </li>
+                    <li>
+                        <a href="#!">Link 3</a>
+                    </li>
+                    <li>
+                        <a href="#!">Link 4</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-md-0 mb-3">
+                <h5 class="text-uppercase">Links</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#!" style="direction:rtl">link 1</a>
+                    </li>
+                    <li>
+                        <a href="#!">Link 2</a>
+                    </li>
+                    <li>
+                        <a href="#!">Link 3</a>
+                    </li>
+                    <li>
+                        <a href="#!">Link 4</a>
+                    </li>
+                </ul>
+            </div>
+       </div>
+
+
+
+        <footer class="page-footer font-small blue" style="width: 100%">
+            <div class="footer-copyright text-center py-3">© 2018 Copyright:
+                <a href="#"> halasat.net</a>
+            </div>
+        </footer>

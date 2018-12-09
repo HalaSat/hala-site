@@ -1,0 +1,51 @@
+.service-container{
+    height: 400px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.534);
+    overflow: hidden;
+}
+
+.bk-image{
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/images/networkin.jpg');
+    opacity: 1;
+}
+
+.service-title{
+    position: relative;
+    top: -40%;
+    width:100%;
+    height: 80px;
+    background-color: rgba(250, 250, 250, 0.678);
+}
+
+.service-title-headline{
+    font-weight: 500;
+    position: relative;
+    top: 31%;
+}
+
+.service-description{
+    position: relative;
+    top: -60%;
+    height: 50%;
+    background-color: rgba(250, 250, 250, 0.678);
+}
+
+.description-container{
+    position: relative;
+    top: 10%;
+}
+.bk-image-one{
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/images/servers.jpg');
+    opacity: 1;
+}
+.bk-image-two{
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/images/voip.jpg');
+    background-size: cover;
+    opacity: 1;
+}

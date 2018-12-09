@@ -1,0 +1,87 @@
+<div class="container">
+  <div class="row" id="feature-head justify-content-md-center" [@fadeAnimate]="changeState ? 'out' : 'in'">
+    <div class="col text-center" id="feature-head-title">
+      <h1>Why HalaSat is the Best?</h1>
+      <div class="text-center row" id="feature-head-description">
+        <div class="col">
+          <p class="m-0"> this is line one of the head description</p>
+          <p class="m-0"> and this is line two</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  features Row Snippit   -->
+
+  <div class="row mt-5 justify-content-center">
+
+    <!--  Feature Number One  -->
+
+    <div class="col-md-4 col-xs-9 col-sm-9 mb-5">
+      <div class="row" >
+        <div class="col-3 text-right" >
+          <i class="material-icons feature-one" [@iconAnimate]="changeState ? 'out' : 'in'">
+            signal_wifi_4_bar
+          </i>
+        </div>
+        <div class="col-9" [@descAnimate]="changeState ? 'out' : 'in'">
+          <h4 class="font-weight-bold">
+            feature title
+          </h4>
+          <p class="m-0">
+            description for this feature
+          </p>
+          <p class="m-0">
+            it spans several lines
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--  Feature Number Two  -->
+
+    <div class="col-md-4 col-xs-9 col-sm-9 mb-5">
+      <div class="row">
+        <div class="col-3 text-right">
+          <i class="material-icons feature-two" [@iconAnimate]="changeState ? 'out' : 'in'">
+            https
+          </i>
+        </div>
+        <div class="col-9" [@descAnimate]="changeState ? 'out' : 'in'">
+          <h4 class="font-weight-bold">
+            feature title
+          </h4>
+          <p class="m-0">
+            description for this feature
+          </p>
+          <p class="m-0">
+            it spans several lines
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--  Feature Number Three  -->
+
+    <div class="col-md-4 col-xs-9 col-sm-9 mb-5">
+      <div class="row">
+        <div class="col-3 text-right">
+          <i class="material-icons feature-three" [@iconAnimate]="changeState ? 'out' : 'in'">
+            brightness_low
+          </i>
+        </div>
+        <div class="col-9" [@descAnimate]="changeState ? 'out' : 'in'">
+          <h4 class="font-weight-bold">
+            feature title
+          </h4>
+          <p class="m-0">
+            description for this feature
+          </p>
+          <p class="m-0">
+            it spans several lines
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
