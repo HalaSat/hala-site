@@ -81,59 +81,64 @@
             </mdb-carousel-item>
 
         </mdb-carousel>
-  
-    <div #contentRef class="content">
-    </div>
-    <div class="row text-center align-items-center services" >
-        <h1 class="col">Our Services</h1>
-        <app-services class="mb-5"></app-services>
-    </div>
 
-    <div class="partners-section">
-        <div class="row justify-content-center partners-row">
-            <div class="col-10 mt-5">
-                <h1 class="text-center pt-4 mb-5">Our Partners</h1>
-                <ngx-slick-carousel class="carousel mt-5" [config]="slideConfig" (init)="slickInit($event)">
-                    <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-                        <img src="{{ slide.img }}" alt="" width="120px" height="100px" style="margin-left: 30%">
-                    </div>
-                </ngx-slick-carousel>
+        <div #contentRef class="content">
+        </div>
+        <div class="row text-center align-items-center services" style="margin-left:0; margin-right:0">
+            <div class=" mt-5 mb-5">
+                <h1 class="col">Our Services</h1>
+                <app-services class="mb-5"></app-services>
             </div>
         </div>
-    </div>
 
-
-    <div class="" style="background-color:white">
-        <app-feature></app-feature>
-    </div>
-
-
-    <div class="about-section align-items-center row">
-        <div class="about-text-container col">
-            <h1 class="text-center pt-4 mb-4">About US</h1>
-            <div class="text-center pb-4">
-                <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p class="m-0"> Veniam dolorum quo ullam, ex magnam ratione vero ad tempora ea aut nisi adipisci, </p>
-                <p class="m-0">voluptatem ut, quibusdam cum voluptatum praesentium dolores iusto?</p>
+        <div class="partners-section">
+            <div class="row justify-content-center partners-row">
+                <div class="col-10 mt-5">
+                    <h1 class="text-center pt-4 mb-5">Our Partners</h1>
+                    <ngx-slick-carousel class="carousel mt-5" [config]="slideConfig" (init)="slickInit($event)">
+                        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                            <img src="{{ slide.img }}" alt="" width="120px" height="100px" style="margin-left: 30%">
+                        </div>
+                    </ngx-slick-carousel>
+                </div>
             </div>
         </div>
+
+
+        <div class="" style="background-color:white; padding-top: 50px; padding-bottom: 50px; background-clip: pa"
+        >
+                <app-feature></app-feature>
+        </div>
+
+
+        <div class="about-section align-items-center row">
+            <div class="about-text-container col">
+                
+                <h1 class="text-center pt-4 mb-4">About US</h1>
+                <div class="text-center pb-4">
+                    <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="m-0"> Veniam dolorum quo ullam, ex magnam ratione vero ad tempora ea aut nisi adipisci,
+                    </p>
+                    <p class="m-0">voluptatem ut, quibusdam cum voluptatum praesentium dolores iusto?</p>
+                </div>
+            </div>
+        </div>
+
     </div>
 
-</div>
-
-<div class="row contact-section">
-    <div class="col m-5">
-        <app-contact></app-contact>
+    <div class="row contact-section">
+        <div class="col m-5">
+            <app-contact></app-contact>
+        </div>
     </div>
-</div>
 </div>
 
 
 
 <footer class="page-footer font-small blue pt-4" style="direction:rtl">
 
-    <div id="footer-section" class="container-fluid text-center text-md-left" style="direction:rtl">
-        <div class="row" style="direction:rtl">
+    <div id="footer-section" class="container-fluid text-center text-md-left" style="direction:rtl; padding-left:0;padding-right: 0">
+        <div class="row" style="direction:rtl;margin-left:0; margin-right:0">
 
             <hr class="clearfix w-100 d-md-none pb-3" style="direction:rtl">
             <div class="col-md-3 mb-md-0 mb-3" style="direction:rtl">
@@ -170,11 +175,11 @@
                     </li>
                 </ul>
             </div>
-       </div>
+        </div>
 
 
 
-        <footer class="page-footer font-small blue" style="width: 100%">
+        <footer class="page-footer font-small blue">
             <div class="footer-copyright text-center py-3">© 2018 Copyright:
                 <a href="#"> halasat.net</a>
             </div>
